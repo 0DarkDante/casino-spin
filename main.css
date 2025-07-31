@@ -3826,6 +3826,29 @@ body:before {
     text-decoration: none;
 }
 
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    20%,
+    60% {
+        transform: translateX(-5px);
+    }
+
+    40%,
+    80% {
+        transform: translateX(5px);
+    }
+}
+
+.submit-btn {
+    animation: shake 1.5s infinite ease-in-out;
+    /* Остальные стили уже есть */
+}
+
 @media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
     .submit-btn {
         height: 42px;

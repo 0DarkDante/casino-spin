@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const spinsText = document.getElementById("spins__text");
   const modalBack = document.getElementById("modal-back_first");
   const mainModal = document.querySelector(".main__modal");
+  const modalWrapper = document.querySelector(".modal__wrapper");
   const leftBonus = document.querySelector(".new-wheel__achievements-bet");
   const rightBonus = document.querySelector(".new-wheel__achievements-bonus");
 
@@ -25,8 +26,8 @@ document.addEventListener("DOMContentLoaded", function () {
   ];
 
   let isSpinning = false;
-  let currentRotation = 0;
   let spinCount = 0;
+  let currentRotation = 0;
   let firstSpinResult = null;
   let secondSpinResult = null;
 
@@ -43,33 +44,33 @@ document.addEventListener("DOMContentLoaded", function () {
     firstSpinResult = null;
     secondSpinResult = null;
     spinsText.textContent = "Tourne la roue";
-    mainModal.style.display = "none";
+
+    // Скрываем модалку и содержимое
+    mainModal.classList.remove("main__modal_show");
     modalBack.style.display = "none";
+    modalWrapper.classList.remove("modal__wrapper_show");
+
     document.body.style.overflow = "";
   }
 
-function spinWheel(targetSector) {
-  return new Promise((resolve) => {
-    const extraSpins = 5;
-    // Убираем currentRotation из вычисления, чтобы вращение всегда рассчитывалось от нуля
-    const stopAngle = targetSector * sectorAngle + extraSpins * 360;
-    const randomOffset = Math.random() * 15 - 7.5;
-    const finalAngle = stopAngle + randomOffset;
+  function spinWheel(targetSector) {
+    return new Promise((resolve) => {
+      const extraSpins = 5;
+      const stopAngle = targetSector * sectorAngle + extraSpins * 360;
+      const randomOffset = Math.random() * 15 - 7.5;
+      const finalAngle = stopAngle + randomOffset;
 
-    isSpinning = true;
-    wheelGroup.style.transition = `transform ${spinDuration}ms cubic-bezier(0.17, 0.67, 0.12, 0.99)`;
-    // Минус, чтобы вращение шло в нужную сторону
-    wheelGroup.style.transform = `rotate(-${finalAngle}deg)`;
+      isSpinning = true;
+      wheelGroup.style.transition = `transform ${spinDuration}ms cubic-bezier(0.17, 0.67, 0.12, 0.99)`;
+      wheelGroup.style.transform = `rotate(-${finalAngle}deg)`;
 
-    setTimeout(() => {
-      isSpinning = false;
-      // Запоминаем текущий поворот в пределах 0-360 для корректного сброса
-      currentRotation = finalAngle % 360;
-      resolve(targetSector);
-    }, spinDuration);
-  });
-}
-
+      setTimeout(() => {
+        isSpinning = false;
+        currentRotation = finalAngle % 360;
+        resolve(targetSector);
+      }, spinDuration);
+    });
+  }
 
   function getRandomSector() {
     return Math.floor(Math.random() * sectorsCount);
@@ -112,22 +113,27 @@ function spinWheel(targetSector) {
 
     if (spinCount === 0) {
       firstSpinResult = resultIndex;
-      showBonus(firstSpinResult, true); // слева
+      showBonus(firstSpinResult, true); // показываем слева
       spinCount++;
       spinsText.textContent = "Encore un tour";
     } else if (spinCount === 1) {
       secondSpinResult = resultIndex;
-      showBonus(secondSpinResult, false); // справа
+      showBonus(secondSpinResult, false); // показываем справа
       spinCount++;
 
       setTimeout(() => {
-        mainModal.style.display = "flex";
+        // Показать модалку и её содержимое
+        mainModal.classList.add("main__modal_show");
         modalBack.style.display = "block";
+        modalWrapper.classList.add("modal__wrapper_show");
         document.body.style.overflow = "hidden";
       }, 1000);
     }
   }
 
+  // Инициализация колеса
   initWheel();
+
+  // Запуск вращения по клику
   runButton.addEventListener("click", handleSpin);
 });

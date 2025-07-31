@@ -1,0 +1,3936 @@
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+.keitaro__link {
+    width: 100%;
+    height: 100%;
+    padding: calc(12px + 3 * (100vw - 320px) / 1600) 8px;
+    text-align: center;
+
+}
+
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    display: block;
+}
+
+:active,
+:focus,
+:hover {
+    outline: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+pre {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+a {
+    background-color: transparent;
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    -webkit-text-decoration: underline dotted;
+    text-decoration: underline dotted;
+}
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+small {
+    font-size: 80%;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+img {
+    border-style: none;
+}
+
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+button,
+input {
+    overflow: visible;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+[type="button"],
+[type="reset"],
+[type="submit"],
+button {
+    -webkit-appearance: button;
+}
+
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring,
+button:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+fieldset {
+    padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal;
+}
+
+progress {
+    vertical-align: baseline;
+}
+
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+[type="search"] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px;
+}
+
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
+}
+
+details {
+    display: block;
+}
+
+summary {
+    display: list-item;
+}
+
+[hidden],
+template {
+    display: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    line-height: 1;
+    margin: 0;
+}
+
+li,
+ul {
+    box-sizing: border-box;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+button,
+input,
+label,
+select,
+textarea {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    display: inline-block;
+    vertical-align: middle;
+    white-space: normal;
+    background: 0 0;
+    line-height: 1;
+}
+
+input:focus {
+    outline: 0;
+}
+
+input::placeholder {
+    color: inherit;
+    font-size: inherit;
+}
+
+input::-webkit-input-placeholder {
+    color: inherit;
+    font-size: inherit;
+}
+
+input::-moz-placeholder {
+    color: inherit;
+    font-size: inherit;
+}
+
+input:-ms-input-placeholder {
+    color: inherit;
+    font-size: inherit;
+}
+
+input::-ms-input-placeholder {
+    color: inherit;
+    font-size: inherit;
+}
+
+input,
+textarea {
+    box-sizing: border-box;
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield;
+    -webkit-box-sizing: content-box;
+}
+
+::-webkit-search-decoration {
+    display: none;
+}
+
+textarea {
+    overflow: auto;
+}
+
+select[multiple],
+textarea {
+    vertical-align: top;
+}
+
+::selection {
+    color: inherit;
+    background: inherit;
+    text-shadow: inherit;
+}
+
+::-webkit-selection {
+    color: inherit;
+    background: inherit;
+    text-shadow: inherit;
+}
+
+::-moz-selection {
+    color: inherit;
+    background: inherit;
+    text-shadow: inherit;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td,
+th {
+    padding: 0;
+}
+
+blockquote {
+    margin: 0;
+}
+
+@font-face {
+    font-family: Pinup-Bold;
+    src:
+        url("Pinup-Bold.woff2") format("woff2"),
+        url("Pinup-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Pinup-Medium;
+    src:
+        url("urn:scrapbook:download:error:https://onlinegamecasinopt.online/lander/cresus-casino-new-logo--fr-/lp/css/fonts/src/fonts/Pinup-Medium/Pinup-Medium.woff2") format("woff2"),
+        url("urn:scrapbook:download:error:https://onlinegamecasinopt.online/lander/cresus-casino-new-logo--fr-/lp/css/fonts/src/fonts/Pinup-Medium/Pinup-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Pinup-Regular;
+    src:
+        url("urn:scrapbook:download:error:https://onlinegamecasinopt.online/lander/cresus-casino-new-logo--fr-/lp/css/fonts/src/fonts/Pinup-Regular/Pinup-Regular.woff2") format("woff2"),
+        url("urn:scrapbook:download:error:https://onlinegamecasinopt.online/lander/cresus-casino-new-logo--fr-/lp/css/fonts/src/fonts/Pinup-Regular/Pinup-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Pinup-Light;
+    src:
+        url("urn:scrapbook:download:error:https://onlinegamecasinopt.online/lander/cresus-casino-new-logo--fr-/lp/css/fonts/src/fonts/Pinup-Light/Pinup-Light.eot") format("embedded-opentype"),
+        url("urn:scrapbook:download:error:https://onlinegamecasinopt.online/lander/cresus-casino-new-logo--fr-/lp/css/fonts/src/fonts/Pinup-Light/Pinup-Light.woff") format("woff"),
+        url("urn:scrapbook:download:error:https://onlinegamecasinopt.online/lander/cresus-casino-new-logo--fr-/lp/css/fonts/src/fonts/Pinup-Light/Pinup-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Pinup-Black;
+    src:
+        url("urn:scrapbook:download:error:https://onlinegamecasinopt.online/lander/cresus-casino-new-logo--fr-/lp/css/fonts/src/fonts/Pinup-Black/Pinup-Black.eot") format("embedded-opentype"),
+        url("Pinup-Black.woff") format("woff"),
+        url("urn:scrapbook:download:error:https://onlinegamecasinopt.online/lander/cresus-casino-new-logo--fr-/lp/css/fonts/src/fonts/Pinup-Black/Pinup-Black.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Roboto-Regular;
+    src: url("urn:scrapbook:download:error:https://onlinegamecasinopt.online/lander/cresus-casino-new-logo--fr-/lp/css/fonts/src/fonts/Roboto-Regular/Roboto-Regular.eot");
+    src:
+        url("urn:scrapbook:download:error:https://onlinegamecasinopt.online/lander/cresus-casino-new-logo--fr-/lp/css/fonts/src/fonts/Roboto-Regular/Roboto-Regular.eot?#iefix") format("embedded-opentype"),
+        url("Roboto-Regular.woff2") format("woff2"),
+        url("Roboto-Regular.woff") format("woff"),
+        url("urn:scrapbook:download:error:https://onlinegamecasinopt.online/lander/cresus-casino-new-logo--fr-/lp/css/fonts/src/fonts/Roboto-Regular/Roboto-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Roboto-Medium;
+    src: url("urn:scrapbook:download:error:https://onlinegamecasinopt.online/lander/cresus-casino-new-logo--fr-/lp/css/fonts/src/fonts/Roboto-Medium/Roboto-Medium.eot");
+    src:
+        url("urn:scrapbook:download:error:https://onlinegamecasinopt.online/lander/cresus-casino-new-logo--fr-/lp/css/fonts/src/fonts/Roboto-Medium/Roboto-Medium.eot?#iefix") format("embedded-opentype"),
+        url("urn:scrapbook:download:error:https://onlinegamecasinopt.online/lander/cresus-casino-new-logo--fr-/lp/css/fonts/src/fonts/Roboto-Medium/Roboto-Medium.woff2") format("woff2"),
+        url("urn:scrapbook:download:error:https://onlinegamecasinopt.online/lander/cresus-casino-new-logo--fr-/lp/css/fonts/src/fonts/Roboto-Medium/Roboto-Medium.woff") format("woff"),
+        url("urn:scrapbook:download:error:https://onlinegamecasinopt.online/lander/cresus-casino-new-logo--fr-/lp/css/fonts/src/fonts/Roboto-Medium/Roboto-Medium.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Roboto-Bold;
+    src: url("urn:scrapbook:download:error:https://onlinegamecasinopt.online/lander/cresus-casino-new-logo--fr-/lp/css/fonts/src/fonts/Roboto-Bold/Roboto-Bold.eot");
+    src:
+        url("urn:scrapbook:download:error:https://onlinegamecasinopt.online/lander/cresus-casino-new-logo--fr-/lp/css/fonts/src/fonts/Roboto-Bold/Roboto-Bold.eot?#iefix") format("embedded-opentype"),
+        url("Roboto-Bold.woff2") format("woff2"),
+        url("Roboto-Bold.woff") format("woff"),
+        url("urn:scrapbook:download:error:https://onlinegamecasinopt.online/lander/cresus-casino-new-logo--fr-/lp/css/fonts/src/fonts/Roboto-Bold/Roboto-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+[class*=" icon-"],
+[class^="icon-"] {
+    font-family: icomoon !important;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-sol:before {
+    content: "\e901";
+}
+
+.icon-touch:before {
+    content: "\e917";
+}
+
+.icon-close:before {
+    content: "\e913";
+}
+
+.icon-money:before {
+    content: "\e910";
+}
+
+.icon-coefficient:before {
+    content: "\e911";
+}
+
+.icon-event:before {
+    content: "\e912";
+}
+
+.icon-ars:before {
+    content: "\e900";
+}
+
+.icon-azn:before {
+    content: "\e902";
+}
+
+.icon-bgn:before {
+    content: "\e903";
+}
+
+.icon-brl:before {
+    content: "\e904";
+}
+
+.icon-cop:before {
+    content: "\e905";
+}
+
+.icon-eur:before {
+    content: "\e906";
+}
+
+.icon-idr:before {
+    content: "\e907";
+}
+
+.icon-inr:before {
+    content: "\e908";
+}
+
+.icon-kzt:before {
+    content: "\e909";
+}
+
+.icon-mdl:before {
+    content: "\e90a";
+}
+
+.icon-pln:before {
+    content: "\e90b";
+}
+
+.icon-rub:before {
+    content: "\e918";
+}
+
+.icon-try:before {
+    content: "\e90c";
+}
+
+.icon-uah:before {
+    content: "\e90d";
+}
+
+.icon-usd:before {
+    content: "\e90e";
+}
+
+.icon-uzs:before {
+    content: "\e90f";
+}
+
+.icon-wallet:before {
+    content: "\e916";
+    color: #fff;
+}
+
+.icon-person:before {
+    content: "\e915";
+    color: #fff;
+}
+
+.icon-arrow-right:before {
+    content: "\e914";
+}
+
+.icon-gift1:before {
+    content: "\e99f";
+}
+
+body,
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@media screen and (max-width: 479.9px) {
+    body,
+    html {
+        min-height: 100%;
+    }
+}
+
+body {
+    font-family: Roboto-Regular, sans-serif;
+    font-size: 18px;
+    color: #fff;
+    background: url("bg.jpg") 50% 70% / cover no-repeat;
+    overflow-x: hidden;
+    position: relative;
+}
+
+@media screen and (max-width: 479.9px) {
+    body {
+        background: url("bg-mob.jpg") 0 / cover no-repeat;
+        overflow-y: auto;
+        background-position: center;
+    }
+}
+
+body:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+@media screen and (max-width: 479.9px) {
+    body:before {
+        background: url("") 80% 35%/109% no-repeat;
+        z-index: 0;
+    }
+}
+
+.header {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    position: static;
+    top: auto;
+    left: auto;
+    font-size: 18px;
+    font-family: Pinup-Bold, sans-serif;
+    width: 100%;
+    padding: 10px 0 20px;
+    max-height: 100px;
+}
+
+@media screen and (max-width: 919.9px) {
+    .header {
+        -webkit-justify-content: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 479.9px) {
+    .header {
+        font-size: 16px;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .header {
+        -webkit-justify-content: center;
+        justify-content: center;
+        top: auto;
+        font-size: 14px;
+        padding: 15px 0 20px;
+    }
+}
+
+.header__logo {
+    display: -webkit-flex;
+    display: flex;
+    width: 200px;
+    padding: 15px 10px;
+    background: rgba(46, 46, 46, 0.71);
+    border-radius: 20px;
+    z-index: 2;
+}
+
+@media screen and (max-width: 479.9px) {
+    .header__logo {
+        width: 160px;
+        padding: 8px;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .header__logo {
+        width: 140px;
+        padding: 8px;
+    }
+}
+
+.header__logo > img {
+    width: 100%;
+    height: 100%;
+}
+
+.header__block {
+    display: -webkit-flex;
+    display: flex;
+    position: static;
+    top: 15px;
+    left: 50%;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+@media screen and (max-width: 479.9px) {
+    .header__block {
+        top: 5px;
+    }
+}
+
+.header__block-img {
+    width: 100%;
+    height: 100%;
+}
+
+.header__link {
+    display: block;
+}
+
+.header__link > img {
+    width: calc(100px + 100 * (100vh - 320px) / 1600);
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    max-width: 90px;
+}
+
+@media screen and (max-width: 479.9px) {
+    .header__link > img {
+        width: calc(100px + 100 * (100vw - 320px) / 1600);
+        max-width: 170px;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .header__link > img {
+        width: calc(130px + 100 * (100vw - 320px) / 1600);
+        max-width: 60px;
+    }
+}
+
+.header__spin {
+    position: static;
+    text-align: center;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+@media screen and (max-width: 919.9px) {
+    .header__spin {
+        display: -webkit-flex;
+        display: flex;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .header__spin {
+        display: -webkit-flex;
+        display: flex;
+    }
+}
+
+.header__spin-text {
+    width: 150px;
+    font-family: Pinup-Bold, sans-serif;
+}
+
+@media screen and (max-width: 919.9px) {
+    .header__spin-text {
+        text-align: left;
+        width: 100px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .header__spin-text {
+        text-align: left;
+        width: 100px;
+        font-size: 16px;
+    }
+}
+
+.header__spin-value {
+    font-size: 63px;
+}
+
+@media screen and (max-width: 919.9px) {
+    .header__spin-value {
+        font-size: 45px;
+        line-height: 32px;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .header__spin-value {
+        font-size: 45px;
+        line-height: 32px;
+    }
+}
+
+.header__right {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    text-align: right;
+}
+
+@media screen and (max-width: 1919.9px) {
+    .header__right-spin {
+        width: 66%;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .header__right-spin {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1919.9px) {
+    .header__right-prize {
+        width: 46%;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .header__right-prize {
+        width: 33%;
+    }
+}
+
+.main {
+    position: relative;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.main__image {
+    position: absolute;
+    opacity: 1;
+    z-index: 0;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    -webkit-animation: blink 3s ease infinite;
+    animation: blink 3s ease infinite;
+}
+
+@media screen and (max-width: 1365.9px) {
+    .main__image {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
+
+@media screen and (max-width: 479.9px) {
+    .main__image {
+        -webkit-transform: scale(0.75);
+        transform: scale(0.75);
+    }
+}
+
+.main__image_lemon1 {
+    top: 12%;
+    left: 1%;
+    width: 100px;
+    height: 105px;
+    background: url("urn:scrapbook:download:error:https://onlinegamecasinopt.online/lander/cresus-casino-new-logo--fr-/lp/css/img/lemon1.png") 50% / contain no-repeat;
+}
+
+.main__image_lemon2 {
+    top: 0;
+    right: 10%;
+    width: 100px;
+    height: 129px;
+    background: url("urn:scrapbook:download:error:https://onlinegamecasinopt.online/lander/cresus-casino-new-logo--fr-/lp/css/img/lemon2.png") 50% / contain no-repeat;
+}
+
+.main__image_star1 {
+    bottom: 28%;
+    right: 11%;
+}
+
+.main__image_star1,
+.main__image_star2 {
+    width: 200px;
+    height: 195px;
+    background: url("urn:scrapbook:download:error:https://onlinegamecasinopt.online/lander/cresus-casino-new-logo--fr-/lp/css/img/star.png") 50% / contain no-repeat;
+}
+
+.main__image_star2 {
+    bottom: 11%;
+    left: 11%;
+}
+
+@media screen and (max-width: 479.9px) {
+    .main__image_star2 {
+        bottom: 1%;
+    }
+}
+
+.main__container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: initial;
+    justify-content: normal;
+    overflow: hidden hidden;
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 40px;
+}
+
+@media screen and (max-width: 1919.9px) {
+    .main__container {
+        padding: 20px 40px 0;
+    }
+}
+
+@media screen and (max-width: 919.9px) {
+    .main__container {
+        padding: 90px 20px;
+    }
+}
+
+@media screen and (max-width: 479.9px) {
+    .main__container {
+        padding: 0 15px 60px;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .main__container {
+        padding: 14px 16px 10px;
+    }
+}
+
+.main__modal {
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    -webkit-animation-name: appearing;
+    animation-name: appearing;
+    -webkit-animation-duration: 0.8s;
+    animation-duration: 0.8s;
+    overflow: auto;
+}
+
+.main__modal_show {
+    display: -webkit-flex;
+    display: flex;
+    visibility: visible;
+}
+
+.main__layout,
+.main__title {
+    position: relative;
+}
+
+.main__title {
+    width: 424px;
+    height: 65px;
+    margin: 0 auto 4px;
+    background: url("urn:scrapbook:download:error:https://onlinegamecasinopt.online/lander/cresus-casino-new-logo--fr-/lp/css/img/title.png") 50% / contain no-repeat;
+    z-index: 2;
+}
+
+@media screen and (max-width: 919.9px) {
+    .main__title {
+        display: none;
+    }
+}
+
+.main__wheel {
+    position: relative;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 500px;
+    height: 500px;
+    background: url("urn:scrapbook:download:error:https://onlinegamecasinopt.online/lander/cresus-casino-new-logo--fr-/lp/css/img/wheel-holder.png") 50% 0 no-repeat;
+    background-size: 100%;
+    box-sizing: content-box;
+    -webkit-animation: scale-in 0.75s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    animation: scale-in 0.75s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@media screen and (max-width: 919.9px) {
+    .main__wheel {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 479.9px) {
+    .main__wheel {
+        height: 82vw;
+        width: 82vw;
+        top: 10px;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .main__wheel {
+        top: 0;
+        height: 39vw;
+        width: 39vw;
+        max-width: 560px;
+        max-height: 560px;
+    }
+}
+
+.main__wheel:after {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: 2px;
+    width: 99%;
+    height: 99%;
+    background: url("urn:scrapbook:download:error:https://onlinegamecasinopt.online/lander/cresus-casino-new-logo--fr-/lp/css/img/wheel-lamps-active.png") 50%/100% no-repeat;
+    z-index: 0;
+    -webkit-animation: lamps 2s step-end infinite;
+    animation: lamps 2s step-end infinite;
+}
+
+@media screen and (max-width: 919.9px) {
+    .main__wheel:after {
+        top: -2px;
+    }
+}
+
+.main__wheel.stage-1 .main__spinner-img {
+    -webkit-animation-name: wheel-shake-1;
+    animation-name: wheel-shake-1;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+}
+
+.main__wheel.spin-to-stage-two {
+    pointer-events: none;
+}
+
+.main__wheel.spin-to-stage-two .main__spinner-img {
+    -webkit-animation-name: spinToStageTwo;
+    animation-name: spinToStageTwo;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-transform: rotate(-25deg);
+    transform: rotate(-25deg);
+}
+
+.main__wheel.stage-2 .main__spinner-img {
+    -webkit-animation-name: wheel-shake-2;
+    animation-name: wheel-shake-2;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+}
+
+.main__wheel.spin-to-stage-three {
+    pointer-events: none;
+}
+
+.main__wheel.spin-to-stage-three .main__spinner-img {
+    -webkit-animation-name: spinToStageThree;
+    animation-name: spinToStageThree;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-transform: rotate(1060deg);
+    transform: rotate(1060deg);
+}
+
+.main__wheel.stage-3 {
+    pointer-events: none;
+}
+
+.main__wheel.stage-3 .main__spinner-img {
+    -webkit-animation-name: wheel-shake-3;
+    animation-name: wheel-shake-3;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+}
+
+.main__achievements {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+@media screen and (max-width: 479.9px) {
+    .main__achievements {
+        -webkit-flex-direction: row;
+        flex-direction: row;
+        top: -41px;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .main__achievements {
+        -webkit-flex-direction: row;
+        flex-direction: row;
+    }
+}
+
+.main__achievements-item {
+    width: 146px;
+    height: 146px;
+    -webkit-animation-name: appearing;
+    animation-name: appearing;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+@media screen and (max-width: 1365.9px) {
+    .main__achievements-item {
+        width: 130px;
+        height: 130px;
+    }
+}
+
+@media screen and (max-width: 479.9px) {
+    .main__achievements-item {
+        width: 170px;
+        height: 170px;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .main__achievements-item {
+        width: 15vw;
+        max-width: 162px;
+        height: 15vw;
+    }
+}
+
+.main__achievements-item.hide {
+    display: none;
+}
+
+.main__achievements-item--bonus {
+    background: url("urn:scrapbook:download:error:https://onlinegamecasinopt.online/lander/cresus-casino-new-logo--fr-/lp/css/img/bonus.png") 50% / contain no-repeat;
+}
+
+.main__achievements-item--spin {
+    background: url("urn:scrapbook:download:error:https://onlinegamecasinopt.online/lander/cresus-casino-new-logo--fr-/lp/css/img/spin.png") 50% / contain no-repeat;
+}
+
+.main__spinner {
+    position: relative;
+    width: 380px;
+    height: 380px;
+    top: -5px;
+}
+
+@media screen and (max-width: 919.9px) {
+    .main__spinner {
+        width: 304px;
+        height: 304px;
+    }
+}
+
+@media screen and (max-width: 479.9px) {
+    .main__spinner {
+        width: 77%;
+        height: 77%;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .main__spinner {
+        width: 76%;
+        height: 76%;
+    }
+}
+
+.main__spinner-img {
+    background: url("urn:scrapbook:download:error:https://onlinegamecasinopt.online/lander/cresus-casino-new-logo--fr-/lp/css/img/wheel.png") 50% no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 100%;
+}
+
+.main__spinner-button {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: -webkit-flex;
+    display: flex;
+    width: 190px;
+    height: 190px;
+    background: url("urn:scrapbook:download:error:https://onlinegamecasinopt.online/lander/cresus-casino-new-logo--fr-/lp/css/img/wheel-button-background.png") 0 top/100% no-repeat;
+    margin: auto;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 919.9px) {
+    .main__spinner-button {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+@media screen and (max-width: 479.9px) {
+    .main__spinner-button {
+        width: 44%;
+        height: 44%;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .main__spinner-button {
+        width: 44%;
+        height: 44%;
+    }
+}
+
+.main__spinner-button:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-animation: blink 1.2s ease-in-out infinite;
+    animation: blink 1.2s ease-in-out infinite;
+    background: url("urn:scrapbook:download:error:https://onlinegamecasinopt.online/lander/cresus-casino-new-logo--fr-/lp/css/img/wheel-button-glow.png") 50%/100% no-repeat;
+}
+
+@media screen and (max-width: 479.9px) {
+    .main__spinner-button:before {
+        top: 50%;
+        left: 49%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .main__spinner-button:before {
+        top: 50%;
+        left: 49%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+}
+
+.main__spinner-button:hover {
+    background-position: 0 -190px;
+}
+
+@media screen and (max-width: 919.9px) {
+    .main__spinner-button:hover {
+        background-position: 0 -180px;
+    }
+}
+
+@media screen and (max-width: 479.9px) {
+    .main__spinner-button:hover {
+        background-position: 0 0;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .main__spinner-button:hover {
+        background-position: 0 0;
+    }
+}
+
+.main__win {
+    position: absolute;
+    top: 16px;
+    right: 0;
+    left: 0;
+    width: 184px;
+    height: 295px;
+    margin: auto;
+    background: url("urn:scrapbook:download:error:https://onlinegamecasinopt.online/lander/cresus-casino-new-logo--fr-/lp/css/img/wheel-win-frame.png") 50% 0 no-repeat;
+    background-size: 100%;
+    -webkit-transform: none;
+    transform: none;
+    z-index: 1;
+}
+
+@media screen and (max-width: 919.9px) {
+    .main__win {
+        top: 10px;
+        width: 160px;
+        height: 280px;
+    }
+}
+
+@media screen and (max-width: 479.9px) {
+    .main__win {
+        top: 8px;
+        left: 0;
+        width: 38%;
+        height: 50%;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .main__win {
+        top: 8px;
+        width: 38%;
+        height: 44%;
+    }
+}
+
+.main__arch {
+    position: absolute;
+    top: -15px;
+    width: 95%;
+    height: 95%;
+    background: url("urn:scrapbook:download:error:https://onlinegamecasinopt.online/lander/cresus-casino-new-logo--fr-/lp/css/img/wheel-arch.png") 50% / contain no-repeat;
+    z-index: 1;
+}
+
+@media screen and (max-width: 479.9px) {
+    .main__arch {
+        top: -3%;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .main__arch {
+        top: -3%;
+    }
+}
+
+.main__man {
+    position: absolute;
+    width: 219px;
+    height: 350px;
+    background: url("urn:scrapbook:download:error:https://onlinegamecasinopt.online/lander/cresus-casino-new-logo--fr-/lp/css/img/man.png") 100%/100% auto no-repeat;
+    bottom: -6vh;
+    right: 20px;
+}
+
+@media screen and (max-width: 919.9px) {
+    .main__man {
+        bottom: -16vh;
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 479.9px) {
+    .main__man {
+        width: 48%;
+        bottom: -32vh;
+        right: -10px;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .main__man {
+        height: 100%;
+        width: 25%;
+        bottom: -30px;
+        right: 48px;
+    }
+}
+
+.main__books {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+}
+
+@media screen and (max-width: 919.9px) {
+    .main__books {
+        bottom: -13vh;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .main__books {
+        bottom: 0;
+    }
+}
+
+.main__books:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 216px;
+    height: 202px;
+    background: url("urn:scrapbook:download:error:https://onlinegamecasinopt.online/lander/cresus-casino-new-logo--fr-/lp/css/img/books-shadow.png") 0 0 / cover no-repeat;
+    bottom: -55px;
+}
+
+@media screen and (max-width: 479.9px) {
+    .main__books:before {
+        width: 33vw;
+        height: 33vw;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .main__books:before {
+        display: none;
+    }
+}
+
+.main__books-img {
+    width: 216px;
+    height: 202px;
+    background: url("urn:scrapbook:download:error:https://onlinegamecasinopt.online/lander/cresus-casino-new-logo--fr-/lp/css/img/books.png") 100% / contain no-repeat;
+    -webkit-animation: levitate 2.4s ease-in-out infinite;
+    animation: levitate 2.4s ease-in-out infinite;
+}
+
+@media screen and (max-width: 919.9px) {
+    .main__books-img {
+        width: 170px;
+        height: 160px;
+    }
+}
+
+@media screen and (max-width: 479.9px) {
+    .main__books-img {
+        width: 33vw;
+        height: 30vw;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .main__books-img {
+        width: 150px;
+        height: 140px;
+        bottom: 0;
+    }
+}
+
+.main__coins {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+@media screen and (max-width: 479.9px) {
+    .main__coins {
+        bottom: 5vh;
+    }
+}
+
+.main__new-wheel {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+}
+
+@media screen and (max-width: 1919.9px) {
+    .main__new-wheel {
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 479.9px) {
+    .main__new-wheel {
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 320.9px) {
+    .main__new-wheel {
+        margin: auto;
+    }
+}
+
+.main__new-persons {
+    position: absolute;
+}
+
+@-webkit-keyframes lamps {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+
+    33.3% {
+        -webkit-transform: rotate(6.5deg);
+        transform: rotate(6.5deg);
+    }
+
+    66.6% {
+        -webkit-transform: rotate(13deg);
+        transform: rotate(13deg);
+    }
+
+    to {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+}
+
+@-webkit-keyframes levitate {
+    0% {
+        -webkit-transform: translateY(-5%);
+        transform: translateY(-5%);
+    }
+
+    50% {
+        -webkit-transform: translateY(5%);
+        transform: translateY(5%);
+    }
+
+    to {
+        -webkit-transform: translateY(-5%);
+        transform: translateY(-5%);
+    }
+}
+
+@keyframes levitate {
+    0% {
+        -webkit-transform: translateY(-5%);
+        transform: translateY(-5%);
+    }
+
+    50% {
+        -webkit-transform: translateY(5%);
+        transform: translateY(5%);
+    }
+
+    to {
+        -webkit-transform: translateY(-5%);
+        transform: translateY(-5%);
+    }
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes appearing {
+    0% {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes appearing {
+    0% {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes wheel-shake-1 {
+    0% {
+        -webkit-transform: rotate(-5deg);
+        transform: rotate(-5deg);
+    }
+
+    50% {
+        -webkit-transform: rotate(5deg);
+        transform: rotate(5deg);
+    }
+
+    to {
+        -webkit-transform: rotate(-5deg);
+        transform: rotate(-5deg);
+    }
+}
+
+@keyframes wheel-shake-1 {
+    0% {
+        -webkit-transform: rotate(-5deg);
+        transform: rotate(-5deg);
+    }
+
+    50% {
+        -webkit-transform: rotate(5deg);
+        transform: rotate(5deg);
+    }
+
+    to {
+        -webkit-transform: rotate(-5deg);
+        transform: rotate(-5deg);
+    }
+}
+
+@-webkit-keyframes spinToStageTwo {
+    0% {
+        -webkit-transform: rotate(-5deg);
+        transform: rotate(-5deg);
+    }
+
+    70% {
+        -webkit-transform: rotate(1316deg);
+        transform: rotate(1316deg);
+    }
+
+    80% {
+        -webkit-transform: rotate(1306deg);
+        transform: rotate(1306deg);
+    }
+
+    to {
+        -webkit-transform: rotate(1310deg);
+        transform: rotate(1310deg);
+    }
+}
+
+@keyframes spinToStageTwo {
+    0% {
+        -webkit-transform: rotate(-5deg);
+        transform: rotate(-5deg);
+    }
+
+    70% {
+        -webkit-transform: rotate(1316deg);
+        transform: rotate(1316deg);
+    }
+
+    80% {
+        -webkit-transform: rotate(1306deg);
+        transform: rotate(1306deg);
+    }
+
+    to {
+        -webkit-transform: rotate(1310deg);
+        transform: rotate(1310deg);
+    }
+}
+
+@-webkit-keyframes wheel-shake-2 {
+    0% {
+        -webkit-transform: rotate(1311deg);
+        transform: rotate(1311deg);
+    }
+
+    50% {
+        -webkit-transform: rotate(1301deg);
+        transform: rotate(1301deg);
+    }
+
+    to {
+        -webkit-transform: rotate(1311deg);
+        transform: rotate(1311deg);
+    }
+}
+
+@keyframes wheel-shake-2 {
+    0% {
+        -webkit-transform: rotate(1311deg);
+        transform: rotate(1311deg);
+    }
+
+    50% {
+        -webkit-transform: rotate(1301deg);
+        transform: rotate(1301deg);
+    }
+
+    to {
+        -webkit-transform: rotate(1311deg);
+        transform: rotate(1311deg);
+    }
+}
+
+@-webkit-keyframes spinToStageThree {
+    0% {
+        -webkit-transform: rotate(1311deg);
+        transform: rotate(1311deg);
+    }
+
+    70% {
+        -webkit-transform: rotate(2305deg);
+        transform: rotate(2305deg);
+    }
+
+    80% {
+        -webkit-transform: rotate(2295deg);
+        transform: rotate(2295deg);
+    }
+
+    to {
+        -webkit-transform: rotate(2299deg);
+        transform: rotate(2299deg);
+    }
+}
+
+@keyframes spinToStageThree {
+    0% {
+        -webkit-transform: rotate(1311deg);
+        transform: rotate(1311deg);
+    }
+
+    70% {
+        -webkit-transform: rotate(2305deg);
+        transform: rotate(2305deg);
+    }
+
+    80% {
+        -webkit-transform: rotate(2295deg);
+        transform: rotate(2295deg);
+    }
+
+    to {
+        -webkit-transform: rotate(2299deg);
+        transform: rotate(2299deg);
+    }
+}
+
+@-webkit-keyframes wheel-shake-3 {
+    0% {
+        -webkit-transform: rotate(2300deg);
+        transform: rotate(2300deg);
+    }
+
+    50% {
+        -webkit-transform: rotate(2290deg);
+        transform: rotate(2290deg);
+    }
+
+    to {
+        -webkit-transform: rotate(2300deg);
+        transform: rotate(2300deg);
+    }
+}
+
+@keyframes wheel-shake-3 {
+    0% {
+        -webkit-transform: rotate(2300deg);
+        transform: rotate(2300deg);
+    }
+
+    50% {
+        -webkit-transform: rotate(2290deg);
+        transform: rotate(2290deg);
+    }
+
+    to {
+        -webkit-transform: rotate(2300deg);
+        transform: rotate(2300deg);
+    }
+}
+
+@-webkit-keyframes scale-in {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    75% {
+        -webkit-transform: scale(1.02);
+        transform: scale(1.02);
+    }
+
+    to {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes scale-in {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    75% {
+        -webkit-transform: scale(1.02);
+        transform: scale(1.02);
+    }
+
+    to {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.coins__picture {
+    width: 100%;
+    height: 100%;
+}
+
+.coins__picture:before {
+    content: "";
+    display: block;
+    padding-bottom: 10%;
+}
+
+@media screen and (max-width: 479.9px) {
+    .coins__picture:before {
+        padding-bottom: 33%;
+    }
+}
+
+.coins__picture img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: bottom;
+}
+
+.modal {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    overflow-y: auto;
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .modal {
+        height: auto;
+    }
+}
+
+.modal::-webkit-scrollbar {
+    display: none;
+    width: 0;
+}
+
+.modal__wrapper {
+    display: none;
+    visibility: hidden;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    justify-content: center;
+    width: 360px;
+    background: #2d1e15;
+    padding: 0 0 18px;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 0;
+}
+
+@media screen and (max-width: 479.9px) {
+    .modal__wrapper {
+        max-width: 360px;
+        width: 100%;
+        padding: 4px 0;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .modal__wrapper {
+        max-width: 360px;
+        width: 100%;
+        padding: 10px 0;
+    }
+}
+
+.modal__wrapper_show {
+    display: -webkit-flex;
+    display: flex;
+    visibility: visible;
+}
+
+.modal__wrapper-link {
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    text-decoration: none;
+}
+
+.modal__interim,
+.modal__wrapper-link {
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.modal__interim {
+    position: relative;
+    display: none;
+    visibility: hidden;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    height: 600px;
+    width: 600px;
+    padding: 75px 90px 85px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 479.9px) {
+    .modal__interim {
+        width: 320px;
+        height: 320px;
+        padding: 20px;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .modal__interim {
+        width: 320px;
+        height: 320px;
+        padding: 20px;
+    }
+}
+
+.modal__interim_show {
+    display: -webkit-flex;
+    display: flex;
+    visibility: visible;
+}
+
+.modal__interim_first {
+    background: url("urn:scrapbook:download:error:https://onlinegamecasinopt.online/lander/cresus-casino-new-logo--fr-/lp/css/img/bg-modal-first.png") 50%/100% no-repeat;
+}
+
+@media screen and (max-width: 479.9px) {
+    .modal__interim_first {
+        background: url("urn:scrapbook:download:error:https://onlinegamecasinopt.online/lander/cresus-casino-new-logo--fr-/lp/css/img/bg-modal-first.png") 50%/100% no-repeat;
+    }
+}
+
+.modal__interim_second {
+    background: url("urn:scrapbook:download:error:https://onlinegamecasinopt.online/lander/cresus-casino-new-logo--fr-/lp/css/img/bg-modal-first.png") 50%/100% no-repeat;
+}
+
+@media screen and (max-width: 479.9px) {
+    .modal__interim_second {
+        background: url("urn:scrapbook:download:error:https://onlinegamecasinopt.online/lander/cresus-casino-new-logo--fr-/lp/css/img/bg-modal-first.png") 50%/100% no-repeat;
+    }
+}
+
+.modal__interim-button {
+    position: relative;
+    color: #891d00;
+    height: 73px;
+    width: 241px;
+    text-align: center;
+    padding: 0 18px;
+    font-size: 26px;
+    font-family: Pinup-Bold, sans-serif;
+    text-shadow:
+        0 0 9px rgba(243, 227, 123, 0.8),
+        0 1px 0 rgba(255, 222, 0, 0.5);
+    box-shadow: 0 5px 10px rgba(80, 45, 18, 0.6);
+    text-transform: uppercase;
+    border-radius: 10px;
+    top: auto;
+    margin: 31px auto 0;
+}
+
+@media screen and (max-width: 479.9px) {
+    .modal__interim-button {
+        width: 140px;
+        height: 30px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .modal__interim-button {
+        width: 140px;
+        height: 30px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 479.9px) {
+    .modal__interim-button {
+        margin: 20px auto 0;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .modal__interim-button {
+        top: auto;
+        margin: 20px auto 0;
+    }
+}
+
+.modal__interim-button_first,
+.modal__interim-button_second {
+    background: url("urn:scrapbook:download:error:https://onlinegamecasinopt.online/lander/cresus-casino-new-logo--fr-/lp/css/img/button.png") 50% 0 no-repeat;
+}
+
+.modal__interim-button:hover {
+    background-position: 50% -73px;
+}
+
+@media screen and (max-width: 479.9px) {
+    .modal__interim-button:hover {
+        background-position: unset;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .modal__interim-button:hover {
+        background-position: unset;
+    }
+}
+
+.modal__interim:before {
+    content: "";
+    position: absolute;
+    background: url("urn:scrapbook:download:error:https://onlinegamecasinopt.online/lander/cresus-casino-new-logo--fr-/lp/css/img/wheel-lamps-active.png") 50%/99% no-repeat;
+    width: 100%;
+    height: 100%;
+    left: -2px;
+    top: -8px;
+    display: initial;
+    -webkit-animation: lamps 2s step-end infinite;
+    animation: lamps 2s step-end infinite;
+}
+
+@media screen and (max-width: 479.9px) {
+    .modal__interim:before {
+        top: -4px;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .modal__interim:before {
+        top: -4px;
+    }
+}
+
+.modal__interim-price {
+    font-size: 64px;
+    text-align: center;
+    font-family: Pinup-Bold, sans-serif;
+    color: #6f1d2d;
+    text-shadow: 0 0 9px rgba(255, 229, 82, 0.8);
+    margin: 135px 0 0;
+    line-height: 64px;
+}
+
+@media screen and (max-width: 479.9px) {
+    .modal__interim-price {
+        font-size: 42px;
+        margin: 64px 0 0;
+        line-height: 38px;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .modal__interim-price {
+        font-size: 42px;
+        margin: 64px 0 0;
+        line-height: 38px;
+    }
+}
+
+.modal__interim-currency {
+    font-size: 73px;
+}
+
+@media screen and (max-width: 479.9px) {
+    .modal__interim-currency {
+        font-size: 52px;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .modal__interim-currency {
+        font-size: 52px;
+    }
+}
+
+.modal__interim-wrap {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    margin: 125px 0 -13px;
+}
+
+@media screen and (max-width: 479.9px) {
+    .modal__interim-wrap {
+        margin: 64px 0 -7px;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .modal__interim-wrap {
+        margin: 64px 0 -7px;
+    }
+}
+
+.modal__interim-img {
+    height: 162px;
+    width: 162px;
+}
+
+@media screen and (max-width: 1365.9px) {
+    .modal__interim-img {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+@media screen and (max-width: 479.9px) {
+    .modal__interim-img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .modal__interim-img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+.modal__interim-img_bonus {
+    background: url("urn:scrapbook:download:error:https://onlinegamecasinopt.online/lander/cresus-casino-new-logo--fr-/lp/css/img/bonus.png") 50% / contain no-repeat;
+}
+
+.modal__interim-img_spin {
+    background: url("urn:scrapbook:download:error:https://onlinegamecasinopt.online/lander/cresus-casino-new-logo--fr-/lp/css/img/spin.png") 50% / contain no-repeat;
+}
+
+.modal__interim-text {
+    text-align: center;
+    margin: -5px 0 0;
+}
+
+@media screen and (max-width: 479.9px) {
+    .modal__interim-text {
+        font-size: 12px;
+        margin: 0;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .modal__interim-text {
+        font-size: 12px;
+        margin: 0;
+    }
+}
+
+@keyframes lamps {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+
+    33.3% {
+        -webkit-transform: rotate(6.5deg);
+        transform: rotate(6.5deg);
+    }
+
+    66.6% {
+        -webkit-transform: rotate(13deg);
+        transform: rotate(13deg);
+    }
+
+    to {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+}
+
+.title__header {
+    position: relative;
+    box-sizing: border-box;
+    text-align: center;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    padding: 0 8px;
+    background: 0 0;
+    width: 100%;
+}
+
+@media screen and (max-width: 320.9px) {
+    .title__header {
+        display: -webkit-flex;
+        display: flex;
+    }
+}
+
+.title__header > h1 {
+    color: #bdf400;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 400;
+    font-family: Pinup-Bold, sans-serif;
+}
+
+@media screen and (max-width: 479.9px) {
+    .title__header > h1 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .title__header > h1 {
+        font-size: 20px;
+    }
+}
+
+.title__img {
+    margin: -52px 0;
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 479.9px) {
+    .title__img {
+        margin: -38px 0 -40px;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .title__img {
+        margin: -46px 0 -42px;
+    }
+}
+
+.title__subheader {
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px 8px 8px;
+    width: 100%;
+}
+
+@media screen and (max-width: 479.9px) {
+    .title__subheader {
+        padding: 8px 8px 0;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .title__subheader {
+        padding: 2px 8px 0;
+    }
+}
+
+.title__subheader > h2 {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    color: #fff;
+    font-size: 32px;
+    font-style: normal;
+    font-family: Pinup-Bold, sans-serif;
+}
+
+@media screen and (max-width: 479.9px) {
+    .title__subheader > h2 {
+        font-size: 18px;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .title__subheader > h2 {
+        font-size: 16px;
+    }
+}
+
+.title__subheader > h2 > span {
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 479.9px) {
+    .title__subheader > h2 > span {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .title__subheader > h2 > span {
+        margin-bottom: 0;
+    }
+}
+
+.title__subheader > h3 {
+    font-size: 28px;
+    line-height: 36px;
+}
+
+@media screen and (max-width: 479.9px) {
+    .title__subheader > h3 {
+        font-size: 18px;
+        line-height: 26px;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .title__subheader > h3 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+.title__subheader-highlight {
+    color: #bdf400;
+}
+
+.comp-title {
+    font-weight: 700;
+    font-family: inherit;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    align-items: center;
+    padding: 11px;
+}
+
+@media screen and (max-width: 479.9px) {
+    .comp-title {
+        padding: calc(5px + 6 * (100vw - 320px) / 1600);
+    }
+}
+
+.comp-title__bonus {
+    font-size: 27px;
+    color: #ff2400;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 479.9px) {
+    .comp-title__bonus {
+        font-size: calc(24px + (300vw - 960px) / 159.9);
+    }
+}
+
+.comp-title__bonus_second {
+    font-size: 27px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.white {
+    color: #fff !important;
+}
+
+@media screen and (max-width: 479.9px) {
+    .comp-title__bonus_second {
+        font-size: calc(24px + 3 * (100vw - 320px) / 159.9);
+    }
+}
+
+.comp-title__coin {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 479.9px) {
+    .comp-title__coin {
+        font-size: calc(12px + 3 * (100vw - 320px) / 159.9);
+    }
+}
+
+.heading {
+    background: linear-gradient(270.04deg, #f7e881 -20.31%, #c98b27 55.45%, #f7e881 130.3%);
+    box-sizing: border-box;
+    text-align: center;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    padding: 16px 20px;
+    width: 100%;
+    border-radius: 4px 4px 0 0;
+    border-bottom: none;
+    letter-spacing: normal;
+}
+
+@media screen and (max-width: 1919.9px) {
+    .heading {
+        padding: 14px 20px;
+    }
+}
+
+@media screen and (max-width: 479.9px) {
+    .heading {
+        padding: calc(8px + 8 * (100vw - 320px) / 159.9) 15px;
+        max-width: inherit;
+    }
+}
+
+.heading > h1 {
+    font-size: 24px;
+    font-family: Roboto-Bold, sans-serif;
+    text-transform: uppercase;
+    text-shadow: none;
+    color: #602e00;
+}
+
+@media screen and (max-width: 1919.9px) {
+    .heading > h1 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 479.9px) {
+    .heading > h1 {
+        font-size: calc(18px + 3 * (100vw - 320px) / 159.9);
+    }
+}
+
+.tabs {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    width: 320px;
+    margin: 0 auto;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 919.9px) {
+    .tabs {
+        width: 320px;
+    }
+}
+
+@media screen and (max-width: 479.9px) {
+    .tabs {
+        border-radius: 0;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .tabs {
+        width: 320px;
+        margin: 0 auto;
+        border-radius: 0;
+    }
+}
+
+.tabs__item {
+    cursor: pointer;
+    -webkit-flex-basis: 50%;
+    flex-basis: 50%;
+    width: 50%;
+}
+
+.tabs__item > button {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #fff;
+    font-size: 16px;
+    padding: calc(10px + 5 * (100vw - 320px) / 1600) calc(6px + 6 * (100vw - 320px) / 1600);
+    height: auto;
+    background: hsla(0, 0%, 100%, 0.24);
+    width: 100%;
+    position: relative;
+}
+
+@media screen and (max-width: 919.9px) {
+    .tabs__item > button {
+        font-size: 15px;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .tabs__item > button {
+        height: 34px;
+        font-size: 15px;
+    }
+}
+
+.tabs__item > button:after {
+    content: "";
+    display: -webkit-flex;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-bottom: none;
+}
+
+.tabs__item > button.active {
+    color: #fff;
+    font-family: Roboto, sans-serif;
+    background: #ff2400;
+}
+
+.tabs__item > button.active:after {
+    border-color: none;
+}
+
+.new-wheel__layout {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    position: relative;
+    width: 35vw;
+    max-width: 800px;
+    height: 35vw;
+    background: url("wheel-holder-girl.png") 50% / contain no-repeat;
+    box-sizing: content-box;
+    border-radius: 50%;
+    z-index: inherit;
+}
+
+@media screen and (max-width: 1199.9px) {
+    .new-wheel__layout {
+        width: 51vw;
+        height: 51vw;
+    }
+}
+
+@media screen and (max-width: 919.9px) {
+    .new-wheel__layout {
+        width: 440px;
+        height: 440px;
+    }
+}
+
+@media screen and (max-width: 479.9px) {
+    .new-wheel__layout {
+        height: 86vw;
+        width: 86vw;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .new-wheel__layout {
+        height: 43vw;
+        width: 43vw;
+    }
+}
+
+.new-wheel__layout.new-stage-1 .new-wheel__spinner-img {
+    -webkit-animation: new-wheel-shake-1 2s ease-in-out infinite;
+    animation: new-wheel-shake-1 2s ease-in-out infinite;
+}
+
+.new-wheel__layout.new-stage-1.new-stage-1-complete .new-wheel__spinner-img {
+    -webkit-animation: new-wheel-shake-2 2s ease-in-out infinite;
+    animation: new-wheel-shake-2 2s ease-in-out infinite;
+}
+
+.new-wheel__layout.new-spin-to-stage-two .new-wheel__spinner-img {
+    -webkit-animation: newSpinToStageTwo 4s ease-in-out infinite;
+    animation: newSpinToStageTwo 4s ease-in-out infinite;
+}
+
+.new-wheel__layout.new-spin-to-stage-two .new-wheel__button-icon:before {
+    -webkit-animation: none;
+    animation: none;
+}
+
+.new-wheel__layout.new-stage-2 .new-wheel__spinner-img {
+    -webkit-animation: new-wheel-shake-3 2s ease-in-out infinite;
+    animation: new-wheel-shake-3 2s ease-in-out infinite;
+}
+
+.new-wheel__layout.new-stage-2 .new-wheel__button-icon:before {
+    -webkit-animation: inherit;
+    animation: inherit;
+}
+
+.new-wheel__layout.new-spin-to-stage-three .new-wheel__spinner-img {
+    -webkit-animation: newSpinToStageThree 4s ease-in-out;
+    animation: newSpinToStageThree 4s ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-transform: rotate(4319deg);
+    transform: rotate(4319deg);
+}
+
+.new-wheel__layout.new-spin-to-stage-three .new-wheel__button-icon:before {
+    -webkit-animation: none;
+    animation: none;
+}
+
+.new-wheel__achievements {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    position: absolute;
+    top: -10%;
+    bottom: auto;
+    left: 50%;
+    z-index: 2;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 93vw;
+}
+
+@media screen and (max-width: 1365.9px) {
+    .new-wheel__achievements {
+        width: 98vw;
+    }
+}
+
+@media screen and (max-width: 1199.9px) {
+    .new-wheel__achievements {
+        top: -10%;
+    }
+}
+
+@media screen and (max-width: 919.9px) {
+    .new-wheel__achievements {
+        width: 93vw;
+    }
+}
+
+@media screen and (max-width: 479.9px) {
+    .new-wheel__achievements {
+        width: 98vw;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .new-wheel__achievements {
+        width: 100vw;
+        top: -20%;
+    }
+}
+
+.new-wheel__achievements-bet,
+.new-wheel__achievements-bonus {
+    position: relative;
+    -webkit-animation-name: appearing;
+    animation-name: appearing;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.new-wheel__achievements-bet.new-hide,
+.new-wheel__achievements-bonus.new-hide {
+    display: none;
+}
+
+.new-wheel__spinner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* .new-wheel__spinner-img {
+    background: url(../img/wheel-br.png) 50% no-repeat;
+    background-size: contain;
+    padding-bottom: 100%;
+    width: 100%;
+    height: 100%;
+} */
+
+.new-wheel__spinner-center {
+    background: url("wheel-center-girl.png") 50% / contain no-repeat;
+    width: calc(40px + 66 * (100vw - 320px) / 1600);
+    height: calc(40px + 66 * (100vw - 320px) / 1600);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 12;
+    cursor: pointer;
+}
+
+.tittle {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: transparent; 
+    background-image: linear-gradient(to top, #f1ff2e, #fbff00); 
+    -webkit-background-clip: text; 
+    background-clip: text; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+    text-transform: uppercase;
+}
+
+.spins__text {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 25px; 
+}
+
+.new-wheel__win {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background: url("wheel-win-frame-girl.png") 50% 0 no-repeat;
+    background-size: 100%;
+}
+
+.new-wheel__button-wrapper {
+    width: 100%;
+    display: -webkit-flex;
+    display: flex;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .new-wheel__button-wrapper {
+        margin-bottom: 15px;
+    }
+}
+
+.new-wheel__button {
+  
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #ff2400 0.01%, #af0d01);
+    box-shadow: 0 4px 15px rgba(255, 36, 0, 0.55);
+    margin: 0 auto;
+    padding: calc(12px + 10 * (100vw - 320px) / 1600) calc(20px + 22 * (100vw - 320px) / 1600);
+    color: #fff;
+    border-radius: 10px;
+    min-width: calc(150px + 235 * (100vw - 480.1px) / 1439.9);
+    -webkit-animation: scaleBtn 1s linear infinite;
+    animation: scaleBtn 1s linear infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+@media screen and (max-width: 479.9px) {
+    .new-wheel__button {
+        min-width: 100%;
+        border-radius: 5px;
+    }
+
+    .tittle {
+        font-size: 36px;
+        margin-bottom: 35px;
+    
+    }
+
+    .spins__text {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 25px; 
+    }
+
+}
+
+.new-wheel__button-title {
+    margin: 0 0 0 calc(6px + 6 * (100vw - 320px) / 1600);
+    font-family: Pinup-Black, sans-serif;
+    font-size: calc(14px + 14 * (100vw - 320px) / 1600);
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.new-wheel__button-icon {
+    width: calc(20px + 20 * (100vw - 320px) / 1600);
+    height: calc(20px + 20 * (100vw - 320px) / 1600);
+}
+
+.new-wheel__button-icon:before {
+    content: "";
+    display: block;
+    background: url("button-spinner.png") no-repeat 50%;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    -webkit-animation: icon-animation 0.8s linear infinite;
+    animation: icon-animation 0.8s linear infinite;
+}
+
+@-webkit-keyframes scaleBtn {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    to {
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
+    }
+}
+
+@keyframes scaleBtn {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    to {
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
+    }
+}
+
+@-webkit-keyframes icon-animation {
+    to {
+        -webkit-transform: rotate(-1turn);
+        transform: rotate(-1turn);
+    }
+}
+
+@keyframes icon-animation {
+    to {
+        -webkit-transform: rotate(-1turn);
+        transform: rotate(-1turn);
+    }
+}
+
+@-webkit-keyframes new-wheel-shake-1 {
+    0% {
+        -webkit-transform: rotate(-6deg);
+        transform: rotate(-6deg);
+    }
+
+    50% {
+        -webkit-transform: rotate(6deg);
+        transform: rotate(6deg);
+    }
+
+    to {
+        -webkit-transform: rotate(-6deg);
+        transform: rotate(-6deg);
+    }
+}
+
+@keyframes new-wheel-shake-1 {
+    0% {
+        -webkit-transform: rotate(-6deg);
+        transform: rotate(-6deg);
+    }
+
+    50% {
+        -webkit-transform: rotate(6deg);
+        transform: rotate(6deg);
+    }
+
+    to {
+        -webkit-transform: rotate(-6deg);
+        transform: rotate(-6deg);
+    }
+}
+
+@-webkit-keyframes newSpinToStageTwo {
+    0% {
+        -webkit-transform: rotate(-3deg);
+        transform: rotate(-3deg);
+    }
+
+    70% {
+        -webkit-transform: rotate(2084deg);
+        transform: rotate(2084deg);
+    }
+
+    80% {
+        -webkit-transform: rotate(2093deg);
+        transform: rotate(2093deg);
+    }
+
+    to {
+        -webkit-transform: rotate(2084deg);
+        transform: rotate(2084deg);
+    }
+}
+
+@keyframes newSpinToStageTwo {
+    0% {
+        -webkit-transform: rotate(-3deg);
+        transform: rotate(-3deg);
+    }
+
+    70% {
+        -webkit-transform: rotate(2084deg);
+        transform: rotate(2084deg);
+    }
+
+    80% {
+        -webkit-transform: rotate(2093deg);
+        transform: rotate(2093deg);
+    }
+
+    to {
+        -webkit-transform: rotate(2084deg);
+        transform: rotate(2084deg);
+    }
+}
+
+@-webkit-keyframes new-wheel-shake-2 {
+    0% {
+        -webkit-transform: rotate(2084deg);
+        transform: rotate(2084deg);
+    }
+
+    50% {
+        -webkit-transform: rotate(2093deg);
+        transform: rotate(2093deg);
+    }
+
+    to {
+        -webkit-transform: rotate(2084deg);
+        transform: rotate(2084deg);
+    }
+}
+
+@keyframes new-wheel-shake-2 {
+    0% {
+        -webkit-transform: rotate(2084deg);
+        transform: rotate(2084deg);
+    }
+
+    50% {
+        -webkit-transform: rotate(2093deg);
+        transform: rotate(2093deg);
+    }
+
+    to {
+        -webkit-transform: rotate(2084deg);
+        transform: rotate(2084deg);
+    }
+}
+
+@-webkit-keyframes newSpinToStageThree {
+    0% {
+        -webkit-transform: rotate(2093deg);
+        transform: rotate(2093deg);
+    }
+
+    70% {
+        -webkit-transform: rotate(4530deg);
+        transform: rotate(4530deg);
+    }
+
+    80% {
+        -webkit-transform: rotate(4542deg);
+        transform: rotate(4542deg);
+    }
+
+    to {
+        -webkit-transform: rotate(4530deg);
+        transform: rotate(4530deg);
+    }
+}
+
+@keyframes newSpinToStageThree {
+    0% {
+        -webkit-transform: rotate(2093deg);
+        transform: rotate(2093deg);
+    }
+
+    70% {
+        -webkit-transform: rotate(4530deg);
+        transform: rotate(4530deg);
+    }
+
+    80% {
+        -webkit-transform: rotate(4542deg);
+        transform: rotate(4542deg);
+    }
+
+    to {
+        -webkit-transform: rotate(4530deg);
+        transform: rotate(4530deg);
+    }
+}
+
+@-webkit-keyframes new-wheel-shake-3 {
+    0% {
+        -webkit-transform: rotate(4530deg);
+        transform: rotate(4530deg);
+    }
+
+    50% {
+        -webkit-transform: rotate(4542deg);
+        transform: rotate(4542deg);
+    }
+
+    to {
+        -webkit-transform: rotate(4530deg);
+        transform: rotate(4530deg);
+    }
+}
+
+@keyframes new-wheel-shake-3 {
+    0% {
+        -webkit-transform: rotate(4530deg);
+        transform: rotate(4530deg);
+    }
+
+    50% {
+        -webkit-transform: rotate(4542deg);
+        transform: rotate(4542deg);
+    }
+
+    to {
+        -webkit-transform: rotate(4530deg);
+        transform: rotate(4530deg);
+    }
+}
+
+.lights-content {
+    position: relative;
+    font-family: Pinup-Black, sans-serif;
+    text-transform: uppercase;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    color: #331602;
+    background: url("bonus-new.png") 50% / contain no-repeat;
+    min-width: calc(150px + 350 * (100vw - 320px) / 1600);
+    min-height: calc(130px + 320 * (100vw - 320px) / 1600);
+    padding: 15px;
+}
+
+.lights-content__value {
+    position: relative;
+    font-size: calc(19px + 48 * (100vw - 320px) / 1600);
+    background-image: linear-gradient(217.64deg, #936c47 -2.95%, #331602 88.61%);
+    line-height: 0.8;
+}
+
+.lights-content__value,
+.lights-content__value:before {
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.lights-content__value:before {
+    content: attr(data-text);
+    font-size: inherit;
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-image: linear-gradient(
+        135deg,
+        #7d372d 14.64%,
+        #ffd3b3 28.94%,
+        #b28572 37.29%,
+        #6a4235 45.64%,
+        #3d2310 52.57%,
+        #f7c7ac 58.47%,
+        #f9c9ae 60.68%,
+        #facaaf 60.69%,
+        #fdcdb2 62.15%,
+        #fdcdb2 62.16%,
+        #ffceb3 64.36%,
+        #d8ab8f 68.05%,
+        #c2967b 69.89%,
+        #46250b 80.04%,
+        #a87c64 82.92%,
+        #ffd3b3 85.36%
+    );
+    z-index: -1;
+    -webkit-transform: translate(-50%, -50%) scale(1.015);
+    transform: translate(-50%, -50%) scale(1.015);
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    white-space: nowrap;
+}
+
+.lights-content__currency,
+.lights-content__title {
+    font-size: calc(11px + 21 * (100vw - 320px) / 1600);
+    background-image: linear-gradient(217.64deg, #936c47 -2.95%, #331602 88.61%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.newPersons_left {
+    width: 40vw;
+    height: 70vh;
+    left: 0;
+    bottom: 0;
+    background-image: url("");
+    background-position: 100% 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+@media screen and (max-width: 1199.9px) {
+    .newPersons_left {
+        left: 0;
+        height: 78vh;
+        width: 30vw;
+    }
+}
+
+@media screen and (max-width: 479.9px) {
+    .newPersons_left {
+        height: 70vh;
+        width: 35vw;
+        background-image: url("");
+        background-position: 0 0;
+    }
+}
+
+.newPersons_right {
+    width: 43vw;
+    height: 46vh;
+    right: 0;
+    bottom: 0;
+    background-image: url("");
+    background-position: 0 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 479.9px) {
+    .newPersons_right {
+        height: 50vh;
+        bottom: 7vh;
+        background-image: url("");
+    }
+}
+
+.terms {
+    padding: 12px 13px;
+    max-width: 542px;
+    width: 100%;
+    position: absolute;
+    bottom: 2.5vh;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+    transform: translate(-50%);
+    font-size: 12px;
+    font-family: Pinup-Light, sans-serif;
+    line-height: 1.3;
+    background: rgba(0, 0, 0, 0.7);
+    color: hsla(0, 0%, 100%, 0.8);
+    border-radius: 3px;
+    z-index: 2;
+}
+
+@media screen and (max-width: 1919.9px) {
+    .terms {
+        padding: 6px 13px;
+        max-width: 458px;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 479.9px) {
+    .terms {
+        padding: 4px 8px;
+        max-width: 92%;
+    }
+}
+
+.terms > span {
+    font-family: Pinup-Medium, sans-serif;
+}
+
+.email-form {
+    width: 100%;
+    padding-top: 15px;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .email-form {
+        padding-top: 10px;
+    }
+}
+
+.email-form__item {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .email-form__item {
+        margin-bottom: 8px;
+    }
+}
+
+.email-form__email-input,
+.email-form__password-input {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #b787ff;
+    border-radius: 4px;
+    height: 40px;
+    width: 100%;
+    font-size: 18px;
+    padding: 5px 0 5px 14px;
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .email-form__email-input,
+    .email-form__password-input {
+        height: 40px;
+        font-size: 14px;
+    }
+}
+
+.email-form__email-input::-webkit-input-placeholder,
+.email-form__password-input::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 18px;
+}
+
+.email-form__email-input::-moz-placeholder,
+.email-form__password-input::-moz-placeholder {
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 18px;
+}
+
+.email-form__email-input:-ms-input-placeholder,
+.email-form__password-input:-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 18px;
+}
+
+.email-form__email-input::-ms-input-placeholder,
+.email-form__password-input::-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 18px;
+}
+
+.email-form__email-input::placeholder,
+.email-form__password-input::placeholder {
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 18px;
+}
+
+@media screen and (max-width: 479.9px) {
+    .email-form__email-input::-webkit-input-placeholder,
+    .email-form__password-input::-webkit-input-placeholder {
+        font-size: 16px;
+    }
+
+    .email-form__email-input::-moz-placeholder,
+    .email-form__password-input::-moz-placeholder {
+        font-size: 16px;
+    }
+
+    .email-form__email-input:-ms-input-placeholder,
+    .email-form__password-input:-ms-input-placeholder {
+        font-size: 16px;
+    }
+
+    .email-form__email-input::-ms-input-placeholder,
+    .email-form__password-input::-ms-input-placeholder {
+        font-size: 16px;
+    }
+
+    .email-form__email-input::placeholder,
+    .email-form__password-input::placeholder {
+        font-size: 16px;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .email-form__email-input::-webkit-input-placeholder,
+    .email-form__password-input::-webkit-input-placeholder {
+        font-size: 14px;
+    }
+
+    .email-form__email-input::-moz-placeholder,
+    .email-form__password-input::-moz-placeholder {
+        font-size: 14px;
+    }
+
+    .email-form__email-input:-ms-input-placeholder,
+    .email-form__password-input:-ms-input-placeholder {
+        font-size: 14px;
+    }
+
+    .email-form__email-input::-ms-input-placeholder,
+    .email-form__password-input::-ms-input-placeholder {
+        font-size: 14px;
+    }
+
+    .email-form__email-input::placeholder,
+    .email-form__password-input::placeholder {
+        font-size: 14px;
+    }
+}
+
+.email-form__password-input {
+    padding-right: 34px;
+}
+
+.email-form__view-icon {
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    width: 34px;
+    height: 100%;
+}
+
+.email-form__view-icon_close {
+    background: url("urn:scrapbook:download:error:https://onlinegamecasinopt.online/lander/cresus-casino-new-logo--fr-/lp/css/img/view-close-black.svg") no-repeat 50%;
+}
+
+.email-form__view-icon_open {
+    background: url("urn:scrapbook:download:error:https://onlinegamecasinopt.online/lander/cresus-casino-new-logo--fr-/lp/css/img/view-black.svg") no-repeat 50%;
+}
+
+.phone-form {
+    margin-bottom: 0;
+}
+
+.phone-form__header {
+    color: #fff;
+    font-size: 18px;
+    margin: 0;
+    padding: 31px 0 12px;
+    line-height: 22px;
+    font-family: Roboto-Regular, sans-serif;
+    text-align: left;
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .phone-form__header {
+        font-size: 15px;
+        line-height: 15px;
+        padding: 31px 0 12px;
+    }
+}
+
+.select-currency,
+.select-currency__main {
+    position: relative;
+    width: 100%;
+}
+
+.select-currency__main {
+    background-color: #fff;
+    border: 1px solid #b787ff;
+    color: #000;
+    border-radius: 4px;
+    height: 40px;
+    line-height: 28px;
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .select-currency__main {
+        height: 40px;
+    }
+}
+
+.select-currency__main * {
+    pointer-events: none;
+}
+
+.select-currency__main:after {
+    content: "";
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 32px;
+    background: url("urn:scrapbook:download:error:https://onlinegamecasinopt.online/lander/cresus-casino-new-logo--fr-/lp/css/img/down-arrow-black.svg") no-repeat 50%;
+    background-size: 10px;
+    border-left: 1px;
+}
+
+.select-currency__default-input {
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 100%;
+    display: none;
+    visibility: hidden;
+}
+
+.select-currency__list {
+    display: none;
+    background-color: #fff;
+    border: 1px solid #000;
+    box-shadow: 0 10px 12px 1px rgba(0, 0, 0, 0.32);
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    border-radius: 4px;
+    z-index: 1;
+    max-height: 142px;
+    overflow-x: hidden;
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .select-currency__list {
+        top: 36px;
+        height: 92px;
+    }
+}
+
+.select-currency__list::-webkit-scrollbar {
+    display: none;
+    width: 0;
+}
+
+.select-currency__item {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    color: #000;
+    padding: 6px 9px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 479.9px) {
+    .select-currency__item {
+        font-size: 16px;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .select-currency__item {
+        padding: 6px 9px;
+        font-size: 14px;
+    }
+}
+
+.select-currency__item * {
+    pointer-events: none;
+}
+
+.select-currency__item:hover,
+.select-currency__item_active {
+    background: rgba(34, 34, 34, 0.11);
+    color: #0d173b;
+}
+
+.select-currency__item:hover .select-currency__icon,
+.select-currency__item_active .select-currency__icon {
+    color: #000;
+}
+
+.select-currency__placeholder {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    padding-left: 8px;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 479.9px) {
+    .select-currency__placeholder {
+        font-size: 16px;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .select-currency__placeholder {
+        font-size: 14px;
+    }
+}
+
+.select-currency__placeholder .select-currency__text {
+    padding-right: 30px;
+}
+
+.select-currency__icon {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    height: 25px;
+    width: 25px;
+    font-size: 26px;
+    color: #000;
+}
+
+.select-currency__name {
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    padding: 0 5px;
+    margin: 0 5px;
+    text-transform: uppercase;
+}
+
+.select-currency__text {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.select-phone {
+    position: relative;
+}
+
+.select-phone[data-open="false"] > .select-phone__list {
+    display: none !important;
+}
+
+.select-phone__placeholder {
+    margin-bottom: 10px;
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .select-phone__placeholder {
+        margin-bottom: 8px;
+    }
+}
+
+.select-phone__placeholder-logo {
+    background-color: #fff;
+    border: none;
+    display: block;
+    width: 28px;
+    height: 22px;
+    border-radius: 3px;
+    position: absolute;
+    left: 7px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.select-phone__placeholder-input {
+    border: 1px solid #000;
+    color: #000;
+    font-size: inherit;
+    background: url("urn:scrapbook:download:error:https://onlinegamecasinopt.online/lander/cresus-casino-new-logo--fr-/lp/css/img/down-arrow-small-black.svg") no-repeat #fff 44px 50%;
+    background-size: 10px;
+    border-radius: 4px;
+    cursor: text;
+    width: 100%;
+    height: 40px;
+    padding-left: 60px;
+}
+
+@media screen and (max-width: 479.9px) {
+    .select-phone__placeholder-input {
+        font-size: 16px;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .select-phone__placeholder-input {
+        height: 40px;
+        font-size: 14px;
+    }
+}
+
+.select-phone__placeholder-btn {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 60px;
+}
+
+.select-phone__list {
+    background-color: #fff;
+    border: 1px solid #000;
+    box-shadow: 0 10px 12px 1px rgba(0, 0, 0, 0.32);
+    border-radius: 4px;
+    display: none;
+    line-height: 27px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: 16;
+    max-height: 182px;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .select-phone__list {
+        max-height: 132px;
+        top: 35px;
+    }
+}
+
+.select-phone__list::-webkit-scrollbar {
+    display: none;
+    width: 0;
+}
+
+.select-phone__item {
+    color: #000;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px 7px;
+}
+
+@media screen and (max-width: 479.9px) {
+    .select-phone__item {
+        font-size: 16px;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .select-phone__item {
+        padding: 3px 7px;
+        font-size: 14px;
+    }
+}
+
+.select-phone__item:hover,
+.select-phone__item_active {
+    background: #e7e7e7;
+    color: #000;
+}
+
+.select-phone__item-logo {
+    display: block;
+    height: 20px;
+    width: 28px;
+    margin-right: 4px;
+    border: none;
+    border-radius: 3px;
+    pointer-events: none;
+}
+
+.select-phone__item-text {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.no-list-phone .select-phone__placeholder-input {
+    background-image: none;
+    padding-left: 48px;
+}
+
+.no-list-phone .select-phone__placeholder-btn {
+    cursor: inherit;
+}
+
+.checkbox {
+    margin: 0;
+    color: #fff;
+    font-size: 12px;
+    -webkit-order: 1;
+    order: 1;
+    padding: 12px 0 0;
+    border-top: 1px solid hsla(0, 0%, 100%, 0.2);
+}
+
+@media screen and (max-width: 479.9px) {
+    .checkbox {
+        font-size: 11px;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .checkbox {
+        font-size: 13px;
+        margin: 0;
+    }
+}
+
+.checkbox__item {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    margin-bottom: calc(8px + 2 * (100vw - 320px) / 1600);
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .checkbox__item {
+        margin-bottom: 8px;
+    }
+}
+
+.checkbox__label,
+.checkbox__text {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.checkbox__text-link {
+    color: #ff2400;
+    -webkit-align-items: center;
+    align-items: center;
+    font-size: 12px;
+    font-family: Roboto-Regular, sans-serif;
+    margin-left: 5px;
+    text-decoration: underline;
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .checkbox__text-link {
+        font-size: 13px;
+    }
+}
+
+.checkbox__label {
+    cursor: pointer;
+    border: 1px solid #b787ff;
+    border-radius: 2px;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background: 0 0;
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0;
+}
+
+.checkbox__label-icon {
+    display: none;
+    background: #fff url("urn:scrapbook:download:error:https://onlinegamecasinopt.online/lander/cresus-casino-new-logo--fr-/lp/css/img/checkbox-black.svg") no-repeat 50%;
+    background-size: 14px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.checkbox__input {
+    display: none;
+}
+
+.checkbox__input:checked + .checkbox__label .checkbox__label-icon {
+    display: -webkit-flex;
+    display: flex;
+}
+
+.submit-btn {
+    margin: calc(8px + 12 * (100vw - 320px) / 1600) auto 6px;
+    width: 100%;
+    height: auto;
+    /* padding: calc(12px + 3 * (100vw - 320px) / 1600) 8px; */
+    font-size: calc(16px + 2 * (100vw - 320px) / 1600);
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    letter-spacing: normal;
+    text-shadow: none;
+    border-radius: 2px;
+    text-transform: uppercase;
+    background: #ff2400;
+    max-width: 80%;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-decoration: none;
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .submit-btn {
+        height: 42px;
+        font-size: 18px;
+    }
+}
+
+.forms {
+    width: 320px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 479.9px) {
+    .forms {
+        width: 290px;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) and (min-aspect-ratio: 13/9) {
+    .forms {
+        width: 290px;
+    }
+}
+
+.forms > form {
+    display: none;
+}
+
+.forms > form.active {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+
+.forms__questions {
+    text-align: center;
+    margin: calc(6px + 4 * (100vw - 320px) / 1600) 0 calc(8px + 4 * (100vw - 320px) / 1600);
+    font-size: calc(12px + 2 * (100vw - 320px) / 1600);
+    -webkit-order: 1;
+    order: 1;
+}
+
+@media screen and (max-width: 1919.9px) {
+    .forms__questions {
+        margin: calc(6px + 4 * (100vw - 320px) / 1600) 0 calc(8px + 4 * (100vw - 320px) / 1600);
+        font-size: calc(12px + 2 * (100vw - 320px) / 1600);
+    }
+}
+
+@media screen and (max-width: 479.9px) {
+    .forms__questions {
+        margin: calc(6px + 4 * (100vw - 320px) / 1600) 0 calc(8px + 4 * (100vw - 320px) / 1600);
+    }
+}
+
+.forms__signin-link {
+    margin: 0 0 0 15px;
+    color: #e10001;
+}
+
+.alert {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid #afff02;
+    color: #fff;
+    border-radius: 9px;
+    position: fixed;
+    top: 1px;
+    right: 1px;
+    padding: 32px;
+    width: 256px;
+    text-align: center;
+    -webkit-transform: translateX(103%);
+    transform: translateX(103%);
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transition:
+        transform 0.3s,
+        -webkit-transform 0.3s;
+    z-index: 9999;
+    box-sizing: content-box;
+}
+
+@media screen and (max-width: 479.9px) {
+    .alert {
+        padding: 26px;
+        width: 254px;
+    }
+}
+
+.alert__close {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: 0;
+    left: 4px;
+    cursor: pointer;
+}
+
+.alert__close:after,
+.alert__close:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+    transform: translate(-50%, -50%) rotate(45deg);
+    height: 2px;
+    width: 50%;
+    background-color: #fff;
+}
+
+.alert__close:after {
+    -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.alert_active {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+@media screen and (max-width: 479.9px) {
+    .alert_active {
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+}

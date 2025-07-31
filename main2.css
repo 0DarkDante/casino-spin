@@ -1,0 +1,1030 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+body {
+    margin: 0;
+}
+main {
+    display: block;
+}
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+pre {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+a {
+    background-color: transparent;
+}
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted;
+}
+b,
+strong {
+    font-weight: bolder;
+}
+code,
+kbd,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+small {
+    font-size: 80%;
+}
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+sub {
+    bottom: -0.25em;
+}
+sup {
+    top: -0.5em;
+}
+img {
+    border-style: none;
+    max-width: 100%;
+    height: auto;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+button,
+input {
+    overflow: visible;
+}
+button,
+select {
+    text-transform: none;
+}
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+}
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+fieldset {
+    padding: 0.35em 0.75em 0.625em;
+}
+legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal;
+}
+progress {
+    vertical-align: baseline;
+}
+textarea {
+    overflow: auto;
+}
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+[type="search"] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px;
+}
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
+}
+details {
+    display: block;
+}
+summary {
+    display: list-item;
+}
+template {
+    display: none;
+}
+[hidden] {
+    display: none;
+}
+
+.text-white {
+    fill: #908e37;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.text-yellow {
+    fill: #2b2b23;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+g path {
+    stroke: none;
+}
+
+
+/* @font-face {
+    font-family: "Montserrat";
+    src:
+        url("../fonts/Montserrat-Regular/Montserrat-Regular.woff") format("woff"),
+        url("../fonts/Montserrat-Regular/Montserrat-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Montserrat";
+    src:
+        url("../fonts/Montserrat-Medium/Montserrat-Medium.woff") format("woff"),
+        url("../fonts/Montserrat-Medium/Montserrat-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+} */
+/* @font-face {
+    font-family: "Montserrat";
+    src:
+        url("../fonts/Montserrat-SemiBold/Montserrat-SemiBold.woff") format("woff"),
+        url("../fonts/Montserrat-SemiBold/Montserrat-SemiBold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Montserrat";
+    src:
+        url("../fonts/Montserrat-Bold/Montserrat-Bold.woff") format("woff"),
+        url("../fonts/Montserrat-Bold/Montserrat-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+} */
+/* @font-face {
+    font-family: "Montserrat";
+    src:
+        url("../fonts/Montserrat-ExtraBold/Montserrat-ExtraBold.woff") format("woff"),
+        url("../fonts/Montserrat-ExtraBold/Montserrat-ExtraBold.woff2") format("woff2");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Montserrat";
+    src:
+        url("../fonts/Montserrat-Black/Montserrat-Black.woff") format("woff"),
+        url("../fonts/Montserrat-Black/Montserrat-Black.woff2") format("woff2");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+} */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+a {
+    text-decoration: none;
+}
+ul[class] {
+    list-style: none;
+}
+body {
+    font-family: Pinup-Black, sans-serif;
+}
+html {
+    font-size: 10px;
+    background: #1c0108;
+}
+.page {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+}
+.wrapper {
+    background: url("bg1.jpg") 50% 100% no-repeat no-repeat;
+    background-size: cover;
+    max-width: 192rem;
+    margin: 0 auto;
+    position: relative;
+}
+.container {
+    max-width: 100rem;
+    margin: 0 auto;
+    padding: 3.6rem 2rem;
+    position: relative;
+}
+.logo {
+    max-width: 29.6rem;
+    display: block;
+    margin: 0 auto 3.2rem;
+    position: relative;
+    z-index: 18;
+}
+.logo img {
+    width: 100%;
+}
+.wheel {
+    width: max-content;
+    position: relative;
+    margin: 0 auto 22rem;
+    font-size: inherit;
+    
+}
+
+
+.wheel__border {
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wheel__spinner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+}
+.wheel__btn {
+    border: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10em;
+    height: 10em;
+    background: transparent;
+}
+.wheel__btn span {
+    color: #fff;
+    font-weight: 700;
+    font-size: 2.8em;
+    text-align: center;
+    text-transform: uppercase;
+}
+.wheel__btn_around {
+    background: url("wheel-center-girl.png") 50% 0;
+    background-size: 17.3em 35.8em;
+    position: absolute;
+    width: 17.3em;
+    height: 17.9em;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+}
+.wheel__btn:hover ~ .wheel__btn_around {
+    background-position: 50% 100%;
+}
+.wheel__btn:disabled {
+    pointer-events: none;
+}
+.wheel__btn:disabled ~ .wheel__btn_around {
+    background-position: 50% 100%;
+}
+.tr .wheel__btn span {
+    font-size: 1.5em;
+}
+.tr .popup__text_additional span {
+    font-size: 4.7em;
+}
+.title {
+    margin-bottom: 3.6rem;
+    text-align: center;
+    font-size: 4.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+.text__gradient span {
+    background: linear-gradient(180deg, #ffe924 12.95%, #ffa202 83.85%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.popup .text__gradient span {
+    background: linear-gradient(180deg, #fff 14.33%, #ffef27 36.25%, #f9960f 74.08%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.wheel__spinner_animated {
+    /* animation: 2s spinner ease-in-out infinite; */
+    -webkit-animation: new-wheel-shake-1 2s ease-in-out infinite;
+    animation: new-wheel-shake-1 2s ease-in-out infinite
+}
+.wheel__spinner_win_1 {
+    animation: 3s spinTo1 ease-in-out forwards;
+}
+.wheel__spinner_win_2 {
+    animation: 3s spinTo2 ease-in-out forwards;
+}
+@keyframes spinner {
+    0% {
+        transform: rotate(-4deg);
+    }
+    50% {
+        transform: rotate(4deg);
+    }
+    100% {
+        transform: rotate(-4deg);
+    }
+}
+@keyframes spinTo1 {
+    0% {
+        transform: rotate(-4deg);
+    }
+    70% {
+        transform: rotate(724deg);
+    }
+    80% {
+        transform: rotate(716deg);
+    }
+    100% {
+        transform: rotate(720deg);
+    }
+}
+@keyframes spinTo2 {
+    0% {
+        transform: rotate(720deg);
+    }
+    70% {
+        transform: rotate(1534deg);
+    }
+    80% {
+        transform: rotate(1526deg);
+    }
+    100% {
+        transform: rotate(1530deg);
+    }
+}
+.footer__text {
+    color: #fff;
+    text-align: center;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-shadow: 0 0 2rem #000;
+}
+.popup {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(15, 1, 0, 0.85);
+    z-index: 15;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease-in-out;
+    font-size: inherit;
+}
+.popup__show {
+    opacity: 1;
+    pointer-events: all;
+}
+.popup__window {
+    width: 55.4em;
+    background: linear-gradient(180deg, #fdd860 0%, #fbfccb 19.06%, #f8ca58 36.77%, #f19f0c 74.79%, #fdb302 100%);
+    box-shadow: 0px 0px 60px 0px #fff600;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 13rem;
+    margin: 0 auto;
+    display: none;
+    font-size: inherit;
+    padding: 1em;
+}
+.popup__window_show {
+    display: block;
+}
+.popup__container {
+    min-height: 77.5em;
+    padding: 5em 0 6em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: url("urn:scrapbook:download:error:https://onlinegamecasinopt.online/lander/cresus-casino-new-logo--fr-/lp/img/pop-up.jpg") 50% 50%;
+    background-size: cover;
+}
+.popup__content {
+    position: relative;
+    z-index: 4;
+}
+.popup__title {
+    margin-bottom: 2em;
+}
+.popup__title span {
+    text-align: center;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-size: 4.1em;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 1;
+    text-transform: uppercase;
+    display: block;
+}
+.popup__text {
+    margin-bottom: 2em;
+}
+.popup__text span {
+    color: #fff;
+    text-align: center;
+    font-size: 4.8em;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+.popup__win {
+    margin-bottom: 0.7em;
+}
+.popup__win span {
+    text-align: center;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-size: 9.6em;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 1;
+    text-transform: uppercase;
+    display: block;
+}
+.popup__sum {
+    margin-bottom: 0.7em;
+}
+.popup__sum span {
+    text-align: center;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-size: 6.4em;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 1;
+    text-transform: uppercase;
+    display: block;
+}
+.popup__text_additional span {
+    text-align: center;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-size: 6.4em;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 1;
+    text-transform: uppercase;
+    display: block;
+}
+.popup__btn {
+    width: 45.2em;
+    height: 12.8em;
+    border-radius: 6em;
+    background: url("urn:scrapbook:download:error:https://onlinegamecasinopt.online/lander/cresus-casino-new-logo--fr-/lp/img/btn.png") 50% 0;
+    background-size: 45.2em 26.6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.popup__btn span {
+    color: #840301;
+    text-align: center;
+    font-size: 4.6em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+.popup__btn:hover {
+    background-position: 50% 100%;
+}
+.popup__wheel {
+    width: 27em;
+    position: absolute;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    margin: 0 auto;
+    bottom: 10em;
+}
+.popup__wheel img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+.popup__element {
+    position: absolute;
+    pointer-events: none;
+}
+.popup__element img {
+    width: 100%;
+}
+.popup__element_1 {
+    width: 7.6em;
+    left: -10%;
+    top: 20%;
+}
+.popup__element_2 {
+    width: 9.1em;
+    right: -16%;
+    top: 52%;
+}
+html.en .en {
+    display: block;
+}
+html .en {
+    display: none;
+}
+html.ru .ru {
+    display: block;
+}
+html .ru {
+    display: none;
+}
+html.de .de {
+    display: block;
+}
+html .de {
+    display: none;
+}
+html.fi .fi {
+    display: block;
+}
+html .fi {
+    display: none;
+}
+html.pl .pl {
+    display: block;
+}
+html .pl {
+    display: none;
+}
+html.pt .pt {
+    display: block;
+}
+html .pt {
+    display: none;
+}
+html.es .es {
+    display: block;
+}
+html .es {
+    display: none;
+}
+html.ro .ro {
+    display: block;
+}
+html .ro {
+    display: none;
+}
+html.hu .hu {
+    display: block;
+}
+html .hu {
+    display: none;
+}
+html.fr .fr {
+    display: block;
+}
+html .fr {
+    display: none;
+}
+html.ph .ph {
+    display: block;
+}
+html .ph {
+    display: none;
+}
+html.vn .vn {
+    display: block;
+}
+html .vn {
+    display: none;
+}
+html.th .th {
+    display: block;
+}
+html .th {
+    display: none;
+}
+html.cz .cz {
+    display: block;
+}
+html .cz {
+    display: none;
+}
+html.jp .jp {
+    display: block;
+}
+html .jp {
+    display: none;
+}
+html.in .in {
+    display: block;
+}
+html .in {
+    display: none;
+}
+html.gr .gr {
+    display: block;
+}
+html .gr {
+    display: none;
+}
+html.lt .lt {
+    display: block;
+}
+html .lt {
+    display: none;
+}
+html.lv .lv {
+    display: block;
+}
+html .lv {
+    display: none;
+}
+html.se .se {
+    display: block;
+}
+html .se {
+    display: none;
+}
+html.ee .ee {
+    display: block;
+}
+html .ee {
+    display: none;
+}
+html.sk .sk {
+    display: block;
+}
+html .sk {
+    display: none;
+}
+html.ua .ua {
+    display: block;
+}
+html .ua {
+    display: none;
+}
+html.cn .cn {
+    display: block;
+}
+html .cn {
+    display: none;
+}
+html.no .no {
+    display: block;
+}
+html .no {
+    display: none;
+}
+html.my .my {
+    display: block;
+}
+html .my {
+    display: none;
+}
+html.tr .tr {
+    display: block;
+}
+html .tr {
+    display: none;
+}
+.lang_switcher_outer {
+    position: absolute;
+    top: 4rem;
+    right: -10rem;
+    width: 8.6em;
+    height: 4em;
+    z-index: 25;
+    cursor: pointer;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: inherit;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.lang_switcher_outer .lang_switcher {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    display: block;
+    cursor: pointer;
+    position: relative;
+    z-index: 3;
+    width: 8.6em;
+    background: #fb3c3c;
+    border-radius: 0.5em;
+    height: 4em;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.lang_switcher_outer .lang_switcher .curr_lang {
+    position: relative;
+    display: inline-block;
+    top: 0.8em;
+    margin: 0 0.5em 0 0.6em;
+}
+.lang_switcher_outer .lang_switcher .curr_lang span {
+    font-size: 1.3em;
+    padding: 0.35em 0 0 0;
+    display: inline-block;
+}
+.lang_switcher_outer .lang_switcher .curr_lang .lang_flag {
+    top: 0.4em;
+    margin: 0 0.7em 0 0.5em;
+}
+.lang_switcher_outer i {
+    top: 0.8em;
+    background: url("urn:scrapbook:download:error:https://onlinegamecasinopt.online/lander/cresus-casino-new-logo--fr-/lp/img/lang-arr.svg") 0 0 no-repeat;
+    background-size: contain;
+    width: 1.4em;
+    position: relative;
+    height: 0.8em;
+    display: inline-block;
+}
+.lang_switcher_outer p {
+    display: none;
+}
+.flag_ru {
+    opacity: 0;
+}
+.lang_flag {
+    display: inline-flex;
+    border-radius: 50%;
+    width: 1.6em;
+    height: 1.6em;
+    margin: 0 0.7em 0 0.5em;
+    position: relative;
+    top: 0.35em;
+}
+.lang_flag img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.lang_list {
+    position: absolute;
+    list-style-type: none;
+    top: 3em;
+    display: none;
+    right: 0;
+    padding: 1em 0 0 0;
+    width: 8.6em;
+    overflow: hidden;
+    cursor: auto;
+    border-top: none;
+    background: rgba(251, 60, 60, 0.9);
+    border-radius: 0 0 0.5em 0.5em;
+}
+.lang_list.act {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.lang_list li {
+    background: transparent;
+    height: 3em;
+    cursor: pointer;
+    padding: 0 0.5em;
+}
+.lang_list li span {
+    font-size: 1.3em;
+    padding: 0.7em 0 0 0;
+    display: inline-block;
+}
+.lang_list li.curr {
+    pointer-events: none;
+    background: #fff;
+}
+.lang_list li.curr span {
+    color: #fb3c3c;
+}
+.lang_list li:hover {
+    background: #fff;
+}
+.lang_list li:hover span {
+    color: #fb3c3c;
+}
+.bg-bottom {
+    display: none;
+}
+.pers {
+    display: none;
+}
+@media (max-width: 1680px) {
+    html {
+        font-size: 9.5px;
+    }
+}
+@media (max-width: 1560px) {
+    html {
+        font-size: 9px;
+    }
+    .popup {
+        font-size: 95%;
+    }
+}
+@media (max-width: 1400px) {
+    html {
+        font-size: 8.5px;
+    }
+    .popup {
+        font-size: 90%;
+    }
+}
+@media (max-width: 1380px) {
+    .text-white {
+        font-size: 12px;
+    }
+    
+    .text-yellow {
+        font-size: 12px;
+    }
+
+    html {
+        font-size: 8px;
+    }
+    .popup {
+        font-size: 85%;
+    }
+}
+@media (max-width: 992px) {
+    .lang_switcher_outer {
+        right: -2rem;
+    }
+    .popup {
+        font-size: 100%;
+    }
+}
+@media (max-width: 840px) {
+    .text-white {
+        font-size: 12px;
+    }
+    
+    .text-yellow {
+        font-size: 12px;
+    }
+
+    html {
+        font-size: 7.5px;
+    }
+    .lang_switcher_outer {
+        right: 2rem;
+    }
+}
+@media (max-width: 740px) {
+   
+
+    html {
+        font-size: 7px;
+    }
+}
+@media (max-width: 660px) {
+    html {
+        font-size: 6.5px;
+    }
+}
+@media (max-width: 600px) {
+
+    
+    html {
+        font-size: 8px;
+    }
+    .wrapper {
+        background: url("bg-mob1.jpg") 50% 0;
+        background-size: cover;
+        min-height: 100vh;
+    }
+    .logo {
+        margin-bottom: 3rem;
+    }
+    .footer {
+        position: relative;
+        z-index: 10;
+    }
+    .wheel {
+        font-size: 110%;
+        margin-bottom: 28rem;
+    }
+    .footer {
+        padding: 2rem 0;
+    }
+    .lang_switcher_outer {
+        font-size: 115%;
+    }
+    .popup {
+        font-size: 95%;
+    }
+    .footer__text {
+        font-size: 1.8rem;
+    }
+    .title__bottom {
+        font-size: 5.3rem;
+    }
+}
+@media (max-width: 520px) {
+    html {
+        font-size: 7.5px;
+    }
+    .pers {
+        left: 95%;
+    }
+}
+@media (max-width: 480px) {
+    html {
+        font-size: 7px;
+    }
+}
+@media (max-width: 450px) {
+   
+
+    html {
+        font-size: 6.5px;
+    }
+}
+@media (max-width: 400px) {
+  
+
+
+    html {
+        font-size: 6.25px;
+    }
+}
+@media (max-width: 380px) {
+    html {
+        font-size: 6px;
+    }
+}
+@media (max-width: 360px) {
+    html {
+        font-size: 5.5px;
+    }
+}
+@media (max-width: 340px) {
+    html {
+        font-size: 5.25px;
+    }
+}

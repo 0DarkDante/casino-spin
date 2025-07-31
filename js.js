@@ -27,6 +27,8 @@ document.addEventListener("DOMContentLoaded", function () {
   let isSpinning = false;
   let currentRotation = 0;
   let spinCount = 0;
+  let firstSpinResult = null;
+  let secondSpinResult = null;
 
   function initWheel() {
     wheelGroup.style.transformOrigin = "center";
@@ -38,31 +40,36 @@ document.addEventListener("DOMContentLoaded", function () {
     rightBonus.classList.add("new-hide");
 
     spinCount = 0;
+    firstSpinResult = null;
+    secondSpinResult = null;
     spinsText.textContent = "Tourne la roue";
     mainModal.style.display = "none";
     modalBack.style.display = "none";
     document.body.style.overflow = "";
   }
 
-  function spinWheel(targetSector) {
-    return new Promise((resolve) => {
-      const extraSpins = 5;
-      const stopAngle =
-        targetSector * sectorAngle + extraSpins * 360 + currentRotation;
-      const randomOffset = Math.random() * 15 - 7.5;
-      const finalAngle = stopAngle + randomOffset;
+function spinWheel(targetSector) {
+  return new Promise((resolve) => {
+    const extraSpins = 5;
+    // Убираем currentRotation из вычисления, чтобы вращение всегда рассчитывалось от нуля
+    const stopAngle = targetSector * sectorAngle + extraSpins * 360;
+    const randomOffset = Math.random() * 15 - 7.5;
+    const finalAngle = stopAngle + randomOffset;
 
-      isSpinning = true;
-      wheelGroup.style.transition = `transform ${spinDuration}ms cubic-bezier(0.17, 0.67, 0.12, 0.99)`;
-      wheelGroup.style.transform = `rotate(-${finalAngle}deg)`;
+    isSpinning = true;
+    wheelGroup.style.transition = `transform ${spinDuration}ms cubic-bezier(0.17, 0.67, 0.12, 0.99)`;
+    // Минус, чтобы вращение шло в нужную сторону
+    wheelGroup.style.transform = `rotate(-${finalAngle}deg)`;
 
-      setTimeout(() => {
-        isSpinning = false;
-        currentRotation = finalAngle % 360;
-        resolve(targetSector);
-      }, spinDuration);
-    });
-  }
+    setTimeout(() => {
+      isSpinning = false;
+      // Запоминаем текущий поворот в пределах 0-360 для корректного сброса
+      currentRotation = finalAngle % 360;
+      resolve(targetSector);
+    }, spinDuration);
+  });
+}
+
 
   function getRandomSector() {
     return Math.floor(Math.random() * sectorsCount);
@@ -89,7 +96,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   async function handleSpin() {
-    if (isSpinning) return; // блокируем повторный клик
+    if (isSpinning) return;
 
     spinsText.textContent = "Tourne la roue...";
 
@@ -100,19 +107,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (result.type === "try") {
       spinsText.textContent = "Réessayez ! Cliquez encore une fois.";
-      // НЕ увеличиваем spinCount — разрешаем повторный спин
       return;
     }
 
     if (spinCount === 0) {
-      showBonus(resultIndex, true); // слева
+      firstSpinResult = resultIndex;
+      showBonus(firstSpinResult, true); // слева
       spinCount++;
       spinsText.textContent = "Encore un tour";
     } else if (spinCount === 1) {
-      showBonus(resultIndex, false); // справа
+      secondSpinResult = resultIndex;
+      showBonus(secondSpinResult, false); // справа
       spinCount++;
 
-      // Показываем модалку через секунду после второго спина
       setTimeout(() => {
         mainModal.style.display = "flex";
         modalBack.style.display = "block";

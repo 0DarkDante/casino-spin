@@ -30,6 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let currentRotation = 0;
   let firstSpinResult = null;
   let secondSpinResult = null;
+  let timerInterval = null;
 
   function initWheel() {
     wheelGroup.style.transformOrigin = "center";
@@ -45,12 +46,14 @@ document.addEventListener("DOMContentLoaded", function () {
     secondSpinResult = null;
     spinsText.textContent = "Tourne la roue";
 
-    // Скрываем модалку и содержимое
     mainModal.classList.remove("main__modal_show");
     modalBack.style.display = "none";
     modalWrapper.classList.remove("modal__wrapper_show");
 
     document.body.style.overflow = "";
+
+    clearTimer();
+    clearTimerDisplay();
   }
 
   function spinWheel(targetSector) {
@@ -96,6 +99,43 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
+  // Форматируем секунды в MM:SS
+  function formatTime(seconds) {
+    const mins = Math.floor(seconds / 60);
+    const secs = seconds % 60;
+    return `${mins}:${secs.toString().padStart(2, "0")}`;
+  }
+
+  // Запускаем таймер обратного отсчёта
+  function startTimer(durationSeconds, displayElement, onComplete) {
+    let time = durationSeconds;
+    displayElement.textContent = formatTime(time);
+
+    timerInterval = setInterval(() => {
+      time--;
+      displayElement.textContent = formatTime(time);
+
+      if (time <= 0) {
+        clearTimer();
+        if (onComplete) onComplete();
+      }
+    }, 1000);
+  }
+
+  function clearTimer() {
+    if (timerInterval) {
+      clearInterval(timerInterval);
+      timerInterval = null;
+    }
+  }
+
+  function clearTimerDisplay() {
+    const timerEl = document.getElementById("timer");
+    if (timerEl) {
+      timerEl.textContent = "";
+    }
+  }
+
   async function handleSpin() {
     if (isSpinning) return;
 
@@ -113,27 +153,56 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (spinCount === 0) {
       firstSpinResult = resultIndex;
-      showBonus(firstSpinResult, true); // показываем слева
+      showBonus(firstSpinResult, true); // слева
       spinCount++;
       spinsText.textContent = "Encore un tour";
     } else if (spinCount === 1) {
       secondSpinResult = resultIndex;
-      showBonus(secondSpinResult, false); // показываем справа
+      showBonus(secondSpinResult, false); // справа
       spinCount++;
 
-      setTimeout(() => {
-        // Показать модалку и её содержимое
-        mainModal.classList.add("main__modal_show");
-        modalBack.style.display = "block";
-        modalWrapper.classList.add("modal__wrapper_show");
-        document.body.style.overflow = "hidden";
-      }, 1000);
+setTimeout(() => {
+  // Формируем текст с реальными бонусами
+  const firstBonus = sectors[firstSpinResult];
+  const secondBonus = sectors[secondSpinResult];
+  
+  // Строка вида "500€ + 200 FS" или "250€ + 15 FS", или если try — показываем "Réessayez"
+  const formatBonus = (bonus) => {
+    if (bonus.type === "money") return `${bonus.value}€`;
+    if (bonus.type === "fs") return `${bonus.value} FS`;
+    return "Réessayez";
+  };
+
+  const bonusText =
+    firstBonus.type === "try" && secondBonus.type === "try"
+      ? "Réessayez"
+      : `${formatBonus(firstBonus)} + ${formatBonus(secondBonus)}`;
+
+  // Вставляем в модалку
+  const bonusDisplay = document.querySelector(".comp-title__bonus_second.white");
+  if (bonusDisplay) {
+    bonusDisplay.textContent = bonusText;
+  }
+
+  // Показываем модалку и запускаем таймер
+  mainModal.classList.add("main__modal_show");
+  modalBack.style.display = "block";
+  modalWrapper.classList.add("modal__wrapper_show");
+  document.body.style.overflow = "hidden";
+
+  const timerEl = document.getElementById("timer");
+  startTimer(30, timerEl, () => {
+    mainModal.classList.remove("main__modal_show");
+    modalBack.style.display = "none";
+    modalWrapper.classList.remove("modal__wrapper_show");
+    document.body.style.overflow = "";
+    clearTimerDisplay();
+  });
+}, 1000);
+
     }
   }
 
-  // Инициализация колеса
   initWheel();
-
-  // Запуск вращения по клику
   runButton.addEventListener("click", handleSpin);
 });
